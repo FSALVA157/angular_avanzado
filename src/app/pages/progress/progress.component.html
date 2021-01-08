@@ -1,1 +1,46 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Stripped Progress Bar </h4>
+                <div class="progress m-t-30">
+                    <div class="progress-bar bg-info active progress-bar-striped" style="height:8px;" [style.width]='getPorcentaje1()' role="progressbar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Stripped Progress Bar {{valor1}} </h4>
+                <div class="progress m-t-30">
+                    <div class="progress-bar bg-warning active progress-bar-striped" style="height:8px;" [style.width]='getPorcentaje2()' role="progressbar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (valorOutput)='valor1 = $event' [valor]='valor1' [btnClass]="'btn-info'"></app-incrementador>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (valorOutput)='valor2 = $event' [valor]='valor2' [btnClass]="'btn-warning'"></app-incrementador>
+
+            </div>
+        </div>
+    </div>
+</div>

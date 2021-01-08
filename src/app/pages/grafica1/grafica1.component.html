@@ -1,1 +1,26 @@
-<p>grafica1 works!</p>
+<div class="row">
+    <div class="col-6">
+        <app-donuts [titulo]="title1" [doughnutChartLabels]='labels1' [doughnutChartData]="data1"></app-donuts>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-donuts [titulo]="title2" [doughnutChartLabels]='labels2' [doughnutChartData]="data2"></app-donuts>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <app-donuts [titulo]="title3" [doughnutChartLabels]='labels3' [doughnutChartData]="data3"></app-donuts>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-donuts [titulo]="title4" [doughnutChartLabels]='labels4' [doughnutChartData]="data4"></app-donuts>
+
+            </div>
+        </div>
+    </div>
+</div>
